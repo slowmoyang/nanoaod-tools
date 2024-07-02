@@ -32,6 +32,7 @@ sources = [
   'src/correction_tools.cc',
   'src/jet_energy_scale.cc',
   'src/jet_energy_resolution.cc',
+  'src/jet_veto_map.cc',
   'src/lumi_mask.cc',
   'src/mc_truth_helper.cc',
   'src/logical_file_name.cc',
