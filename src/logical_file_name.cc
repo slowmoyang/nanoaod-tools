@@ -59,3 +59,25 @@ bool LogicalFileName::isTTto4Q() const {
   // FIXME amcatnlo
   return primary_dataset == "TTto4Q_TuneCP5_13p6TeV_powheg-pythia8";
 }
+
+
+
+std::ostream& operator<<(std::ostream& os, const LogicalFileName& lfn) {
+  os << "root_dir: "<< lfn.root_dir
+     << std::endl
+     << "type: " << lfn.type
+     << std::endl
+     << "era: " << lfn.era
+     << std::endl
+     << "primary_dataset: " << lfn.primary_dataset
+     << std::endl
+     << "data_tier: " << lfn.data_tier
+     << std::endl
+     << "processed_dataset: " << lfn.processed_dataset
+     << std::endl
+     << "counter: " << lfn.counter
+     << std::endl
+     << "filename: " << lfn.filename
+     << std::endl;
+  return os;
+}

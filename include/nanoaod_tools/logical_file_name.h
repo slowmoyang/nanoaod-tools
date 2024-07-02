@@ -9,6 +9,7 @@
 #include <string>
 #include <memory>
 #include <filesystem>
+#include <iostream>
 
 using namespace ROOT::Math;
 namespace fs = std::filesystem;
@@ -34,6 +35,8 @@ public:
   int year() const;
 
   bool isTTto4Q() const;
+
+  friend std::ostream& operator<<(std::ostream& os, const LogicalFileName& lfn);
 };
 
 #endif // NANOAOD_TOOLS_UTILS_H_
