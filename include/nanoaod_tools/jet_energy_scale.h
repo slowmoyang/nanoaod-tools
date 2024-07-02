@@ -20,6 +20,11 @@ using namespace ROOT::Math;
 using namespace correction;
 
 // returns JES uncertainty correction factor
+// - Run3
+//   - https://cms-jerc.web.cern.ch/JECUncertaintySources/
+//   - https://cms-jerc.web.cern.ch/Recommendations/#jet-energy-scale_1
+// - Run2
+//   - https://twiki.cern.ch/twiki/bin/view/CMS/JECUncertaintySources
 RVec<float>
 getJESUncertaintyCorrectionFactor(
     const RVec<PtEtaPhiMVector>& jet_vec,

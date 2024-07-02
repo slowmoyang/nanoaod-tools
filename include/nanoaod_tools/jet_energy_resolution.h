@@ -20,9 +20,9 @@ float runJERStochasticMethod(const float sigma_jer,
                              const float s_jer,
                              const std::shared_ptr<TRandom3> prng);
 
-// Returns a RVec of JES correction factors
-// Rho_fixedGridRhoFastjetAll
-// https://cms-jerc.web.cern.ch/JER/#smearing-procedures
+// Returns a RVec of JER correction factors
+// https://cms-jerc.web.cern.ch/JER/
+// https://github.com/cms-nanoAOD/nanoAOD-tools/blob/master/python/postprocessing/modules/jme/jetSmearer.py#L101-L193
 RVec<float>
 getJetEnergyResolutionCorrectionFactor(
     const RVec<PtEtaPhiMVector>& rec_jet_vec,
