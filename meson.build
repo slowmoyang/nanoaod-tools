@@ -1,5 +1,5 @@
 project(
-  'nanoaod_tools',
+  'nanoaod-tools',
   'cpp',
   license: 'MIT',
   version: '1.0.0',
